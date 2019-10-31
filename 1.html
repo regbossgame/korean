@@ -1,0 +1,18 @@
+﻿<input id="fullname" name="fullname" type="text" size="100"/>
+<link href="dadata/suggestions.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!--[if lt IE 10]>
+<script type="text/javascript" src="dadata/jquery.xdomainrequest.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="dadata/jquery.suggestions.min.js"></script>
+<script type="text/javascript">
+    $("#fullname").suggestions({
+        token: "2246880939520b701cb3bd3661647713c531d04d",
+        type: "NAME",
+        count: 5,
+        /* Вызывается, когда пользователь выбирает одну из подсказок */
+        onSelect: function(suggestion) {
+            console.log(suggestion);
+        }
+    });
+</script>
